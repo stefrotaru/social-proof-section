@@ -8,7 +8,7 @@
 
     --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
     --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
-    --neutral-white: White: hsl(0, 0%, 100%);
+    --neutral-white: hsl(0, 0%, 100%);
 
     /* Fonts */
     --font-main: 'League Spartan', sans-serif;
@@ -22,40 +22,110 @@
     padding: 0;
 }
 
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: var(--font-main);
+}
 
 
+.container {
+    background: url(../images/bg-pattern-top-mobile.svg) top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+    padding: 1.5rem 1.7rem 1.5rem 1.7rem;
+}
 
+.about {
+    text-align: center;
 
+    display: flex;
+    flex-direction: column;
+}
 
+.about__title {
+    font-size: calc(2.5rem + 1vw);
+    font-weight: 700;
+    color: var(--primary-very-dark-magenta);
+    letter-spacing: -2px;
+    line-height: 2.2rem;
+    padding-inline: 5% 5%;
+    padding-block: 20% 5%;
+}
 
+.about__text {
+    font-size: calc(.9rem + 1vw);
+    font-weight: 500;
+    color: var(--neutral-dark-grayish-magenta);
+    line-height: 1.5rem;
+    padding-block: 2% 10%;
+}
 
+.ratings {}
 
+.ratings__box {
+    background-color: var(--neutral-light-grayish-magenta);
+    border-radius: .5rem;
+    margin-block-start: 1rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 
+.ratings__box-stars {
+}
 
+.ratings__box-text {
+    padding-block-start: .5rem;
+    color: var(--primary-very-dark-magenta);
+    font-weight: 700;
+}
 
+.comments {
+    padding-block-start: 2rem;
+}
 
+.comment {
+    background-color: var(--primary-very-dark-magenta);
+    border-radius: .5rem;
+    color: var(--neutral-white);
+    padding: 2.2rem 2.8rem;
+    margin-block-start: 1rem;
+}
 
+.comment__user {
+    margin-block-end: 2rem;
 
+    display: flex;
+}
 
+.comment__user-box {
+    align-self: center;
+}
 
+.comment__user-img {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-inline-end: 1.5rem;
+}
 
+.comment__user-name {
+    font-size: 1rem;
+}
 
+.comment__user-verified {
+    color: var(--primary-soft-pink);
+    font-weight: 300;
+    margin-top: 0.3rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.comment__text {
+    line-height: 1.5rem;
+}
 
 
 
@@ -65,5 +135,5 @@
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--primary-very-dark-magenta);
 }
